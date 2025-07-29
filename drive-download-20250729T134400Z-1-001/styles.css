@@ -1,0 +1,311 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: darkgoldenrod;
+    background-color: black;
+}
+
+
+.blurred-background {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://cdn.sanity.io/images/c1chvb1i/production/b9e6fbb3cd952a60b934a5a553b9c8eb57f1034e-1080x1350.jpg?w=1760&q=75&fit=max&auto=format&dpr=2');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1; 
+}
+
+header {
+    background: #5b2d91;
+    color: goldenrod;
+    padding: 2px 0;
+    text-align: center;
+}
+
+nav ul {
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  overflow: hidden;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    height: 100vh;        
+    color: white;          
+    padding: 20px;
+}
+
+.intro {
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.Welcome {
+    font-size: 1.2rem;  
+    line-height: 1.6;   
+    max-width: 800px;  
+}
+
+
+h1 {
+    margin: 0px;
+    text-align: center;
+}
+h1, h2 {
+    color: goldenrod;
+}
+
+h2 a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    max-width: 1500px; 
+    margin: 20px auto;
+    display: block;
+}
+
+.Biography, .Attri, .educ, .Car, .Fam {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid goldenrod;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; 
+    text-align: left;
+    justify-content: center; 
+    padding-bottom: 35px;
+}
+
+footer {
+    text-align: center;
+    padding: 0px ;
+    background: #5b2d91;
+    color: goldenrod;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+}
+section
+.shoe {
+    font-size: 25px; 
+    margin-top: 25px; 
+}
+
+.shoe-item {
+    display: inline-block;
+    width: calc(25% - 35px); 
+    margin: 10px; 
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+
+.image-wrapper {
+    display: inline-block; 
+    padding: 5px; 
+    border: 3px solid goldenrod; 
+    border-radius: 5px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.shoe-image {
+    width: 220px; 
+    height: auto; 
+    border-radius: 3px; 
+}
+
+.shoe-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px; 
+    margin: 20px auto;
+    display: block;
+}
+
+
+#achievements {
+     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid goldenrod;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 40px auto 10px;
+    max-width: 800px;
+    text-align: left;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+#achievements h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#achievements h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: goldenrod;
+}
+
+#achievements ul {
+    list-style-type: disc; 
+    padding-left: 20px;   
+}
+
+#achievements ul li {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #achievements h2 {
+        font-size: 1.5rem;
+    }
+
+    #achievements h3 {
+        font-size: 1.2rem;
+    }
+
+    #achievements ul li {
+        font-size: 0.9rem;
+    }
+}
+
+.about-section {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    color: goldenrod;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-section h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    color: black;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 
+    0 0 20px#e99f00,
+    0 0 30px#ffa600,
+    0 0 40px#ff8310,
+    0 0 50px#ffd900;
+}
+.author {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 
+    0 0 20px#e99f00,
+    0 0 30px#ffa600,
+    0 0 40px#ff8310,
+    0 0 50px#ffd900;
+    
+}
+
+
